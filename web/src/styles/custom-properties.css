@@ -1,8 +1,21 @@
-:root {
-  --font-family-sans: -apple-system, BlinkMacSystemFont, sans-serif;
+@font-face{
+    font-family: Biotif-Regular ;
+    src:  url(../components/fonts/Biotif-Regular.woff), format('woff'),
+          url(../components/fonts/Biotif-Regular.ttf) format('truetype');
+}
 
-  --color-black: #202123;
-  --color-dark-gray: #32373e;
+@font-face{
+    font-family: Bogart-Regular ;
+    src:  url(../components/fonts/Bogart-Regular-trial.woff), format('woff'),
+          url(../components/fonts/Bogart-Regular-trial.ttf), format('truetype');
+}
+
+:root {
+  --font-family-primary: 'Biotif-Regular', Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-family-highlight: 'Bogart-Regular', Helvetica Neue, Helvetica, Arial, sans-serif;
+
+  --color-black: #111111;
+  --color-dark-gray: #191919;
   --color-gray: #697a90;
   --color-light-gray: #b4bcc7;
   --color-very-light-gray: #e7ebed;
