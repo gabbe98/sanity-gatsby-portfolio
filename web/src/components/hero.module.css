@@ -1,0 +1,46 @@
+@import '../styles/custom-media.css';
+@import '../styles/custom-properties.css';
+
+.root {}
+
+.hero_title {
+    /* font-family: var(--font-family-highlight); */
+    font-size: var(--font-title1-size);
+    line-height: var(--font-title1-line-height);
+    font-weight: normal;
+    background: linear-gradient(271deg,#a0e9ff 30%,#a162e8 50%,#f093b0 70%,#edca85 94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0;
+
+    @nest & span {
+        text-size-adjust: 100%;
+        display: block;
+    }
+}
+
+.hero_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.textcontainer {
+    width: 50%;
+
+    @nest & p {
+        margin: 2em 0;
+        padding-right: 2em;
+    }
+}
+
+.displaycontainer {
+    width: 50%;
+    background: var(--color-dark-gray);
+    border-radius: 2em;
+    height: 555px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}

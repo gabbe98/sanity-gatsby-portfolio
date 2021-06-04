@@ -10,6 +10,7 @@ import person from './documents/person'
 import sampleProject from './documents/sampleProject'
 import siteSettings from './documents/siteSettings'
 import navbar from './documents/navbar'
+import hero from './documents/hero'
 
 // Object types
 import bioPortableText from './objects/bioPortableText'
@@ -38,6 +39,7 @@ export default createSchema({
     person,
     sampleProject,
     siteSettings,
-    navbar
+    navbar,
+    hero
   ])
 })

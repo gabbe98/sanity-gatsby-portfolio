@@ -1,26 +1,22 @@
 @font-face{
-    font-family: Biotif-Regular ;
-    src:  url(../components/fonts/Biotif-Regular.woff), format('woff'),
-          url(../components/fonts/Biotif-Regular.ttf) format('truetype');
+    font-family: Biotif ;
+    src:  url(../components/fonts/Biotif-Regular.ttf) format('ttf');
 }
 
-@font-face{
-    font-family: Bogart-Regular ;
-    src:  url(../components/fonts/Bogart-Regular-trial.woff), format('woff'),
-          url(../components/fonts/Bogart-Regular-trial.ttf), format('truetype');
-}
+/* @font-face{
+    font-family: Bogart ;
+    src:  url(../components/fonts/Bogart-Regular.ttf), format('ttf'),
+} */
 
 :root {
-  --font-family-primary: 'Biotif-Regular', Helvetica Neue, Helvetica, Arial, sans-serif;
-  --font-family-highlight: 'Bogart-Regular', Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-family-primary: 'Biotif', Helvetica Neue, Helvetica, Arial, sans-serif;
+  /* --font-family-highlight: 'Bogart', Helvetica Neue, Helvetica, Arial, sans-serif; */
 
   --color-black: #111111;
   --color-dark-gray: #191919;
   --color-gray: #697a90;
-  --color-light-gray: #b4bcc7;
-  --color-very-light-gray: #e7ebed;
   --color-white: #fff;
-  --color-accent: #156dff;
+  --color-accent: #ffc4ff;
 
   /* Typography */
   --unit: 16;
@@ -37,6 +33,6 @@
   --font-title3-line-height: calc(30 / 21); /* 30px */
   --font-title2-size: calc(24 / var(--unit) * 1rem); /* 24px */
   --font-title2-line-height: calc(33 / 24); /* 33px */
-  --font-title1-size: calc(49 / var(--unit) * 1rem); /* 49px */
-  --font-title1-line-height: calc(57 / 49); /* 57px */
+  --font-title1-size: calc(72 / var(--unit) * 1rem); /* 72px */
+  --font-title1-line-height: calc(80 / 72); /* 80px */
 }

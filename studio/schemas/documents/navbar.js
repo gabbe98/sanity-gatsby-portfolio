@@ -4,13 +4,13 @@ export default {
     title: 'Navbar',
     fields: [
       {
-        name: 'Text',
+        name: 'text',
         type: 'string',
-        title: 'Link to',
-        description: 'Navbar the link displayed text.',
+        title: 'Link display',
+        description: 'Navbar the links displayed text.',
       },
       {
-        name: 'URL',
+        name: 'url',
         type: 'url',
         title: 'Href to',
         description: 'Navbar where the link is referring to.',

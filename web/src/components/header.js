@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 import { cn } from "../lib/helpers";
 import Icon from "./icon";
 
@@ -7,10 +7,10 @@ import * as styles from "./header.module.css";
 
 const query = graphql`
   query NavbarQuery {
-    navbar: allSanityNavbar {
+    navbar: allSanityNavbar(sort: {order: ASC, fields: _createdAt}) {
       nodes {
-        URL
-        Text
+        url
+        text
       }
     }
   }
@@ -27,14 +27,14 @@ const Header = () => {
                 render={data => {
                   if (!data.navbar) {
                     throw new Error(
-                      'Missing "Navbar". Open the studio at http://localhost:3333 and add "Site navbar links" data'
+                      'Missing "Navbar". Open the studio at http://localhost:3333 and add "Site navbar links" data.'
                     );
                   }      
                   return (
                     <>
                       {data.navbar.nodes.map((value) => (
-                        <li key={value.Text}>
-                          <a href={value.URL}>{value.Text}</a>
+                        <li key={value.text}>
+                          <Link to={value.url}>{value.text}</Link>
                         </li>
                       ))}
                     </>
