@@ -1,0 +1,73 @@
+@import '../styles/custom-properties.css';
+
+:root {}
+
+.history_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 1em;
+    padding-bottom: 4em;
+}
+
+.history_card_grid1 {
+    grid-column: col-start / span 3;
+    grid-row: 3;
+    background-color: var(--color-dark-gray);
+    padding: 1.5em;
+    border-radius: 10px;
+
+    @media (max-width: 1000px) {
+        grid-column: col-start / span 12;
+        grid-row: 1;
+    }
+}
+
+.history_card_grid2 {
+    grid-column: col-start 5/ span 5;
+    grid-row: 2;
+    background-color: var(--color-dark-gray);
+    padding: 1.5em;
+    border-radius: 10px;
+
+    @media (max-width: 1000px) {
+        grid-column: col-start / span 12;
+    }
+}
+
+.history_card_grid3 {
+    grid-column: col-start 9/ span 4;
+    grid-row: 1;
+    background-color: var(--color-dark-gray);
+    padding: 1.5em;
+    border-radius: 10px;
+
+    @media (max-width: 1000px) {
+        grid-column: col-start / span 12;
+        grid-row: 3;
+    }
+}
+
+.history_card_company {
+    font-size: 18px;
+}
+
+.history_card_role {
+    font-size: 14px;
+    display: block;
+}
+
+.history_card_when {
+    font-size: 22px;
+}
+
+.history_card_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.history_card_block {
+
+}

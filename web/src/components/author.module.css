@@ -1,0 +1,46 @@
+@import '../styles/custom-properties.css';
+
+:root {}
+
+.author_img {
+    border-radius: 2em;
+    max-width: 100%;
+}
+
+.author_paragraph {
+    font-size: var(--font-base-size);
+}
+
+.author_paragraph_strong {
+    font-size: 2em;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.image_container {
+    width: 50%;
+    text-align: center;
+
+    @media (max-width: 1200px) {
+        width: 100%;
+    }
+}
+
+.text_container {
+    width: 50%;
+
+    @media (max-width: 1200px) {
+        width: 100%;
+    }
+}
+
+.author_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 4em;
+
+    @media (max-width: 1200px) {
+        flex-direction: column;
+    }
+}

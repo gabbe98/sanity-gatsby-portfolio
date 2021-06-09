@@ -1,0 +1,7 @@
+@import '../styles/custom-properties.css';
+
+.root {}
+
+.verticalbarchart {
+    max-height: 400px;
+}
