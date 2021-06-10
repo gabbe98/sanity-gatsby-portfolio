@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { getImage } from "gatsby-plugin-image"
 
 import GraphQLErrorList from "../components/graphql-error-list";
 
@@ -17,6 +18,14 @@ export const query = graphql`
         name
         image {
           asset {
+            gatsbyImageData(
+              fit: CLIP
+              height: 500
+              placeholder: BLURRED
+              width: 500
+              aspectRatio: 1.1
+              formats: JPG
+            )
             _id
           }
           crop {
@@ -51,6 +60,7 @@ export const query = graphql`
 
 const AboutPage = props => {
   const { data, errors } = props;
+  const imageSrc = getImage(data.about.author.image.asset)
 
   if (errors) {
     return (
@@ -64,7 +74,7 @@ const AboutPage = props => {
     <Layout>
       <SEO title="About" />
       <Container>
-        <Author imageSrc={data.about.author.image} imageAlt={data.about.author.image.alt} bio={data.about.author.bio} />
+        <Author imageSrc={imageSrc} imageAlt={data.about.author.image.alt} bio={data.about.author.bio} />
         <History />
         <VerticalBar />
       </Container>

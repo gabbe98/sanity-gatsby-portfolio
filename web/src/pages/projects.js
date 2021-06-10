@@ -22,6 +22,13 @@ export const query = graphql`
           mainImage {
             asset {
               _id
+              gatsbyImageData(
+                placeholder: BLURRED
+                width: 600
+                formats: JPG
+                fit: CROP
+                height: 400
+              )
             }
             alt
           }

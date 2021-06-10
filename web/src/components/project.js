@@ -1,8 +1,7 @@
 import { format, distanceInWords, differenceInDays } from "date-fns";
 import React from "react";
 import { Link } from "gatsby";
-import { buildImageObj } from "../lib/helpers";
-import { imageUrlFor } from "../lib/image-url";
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import BlockContent from "./block-content";
 import Container from "./container";
 import RoleList from "./role-list";
@@ -11,18 +10,12 @@ import * as styles from "./project.module.css";
 
 function Project(props) {
   const { _rawBody, title, categories, mainImage, members, publishedAt, relatedProjects } = props;
+  const imageSrc = getImage(props.mainImage.asset)
   return (
     <article className={styles.root}>
       {props.mainImage && mainImage.asset && (
         <div className={styles.mainImage}>
-          <img
-            src={imageUrlFor(buildImageObj(mainImage))
-              .width(1200)
-              .height(Math.floor((9 / 16) * 1200))
-              .fit("crop")
-              .url()}
-            alt={mainImage.alt}
-          />
+          <GatsbyImage image={imageSrc} alt={props.mainImage.alt} />
         </div>
       )}
       <Container>
