@@ -2,6 +2,10 @@
 
 .root {}
 
+.title {
+    font-family: var(--font-family-highlight);
+}
+
 .verticalbarchart {
     max-height: 400px;
 }

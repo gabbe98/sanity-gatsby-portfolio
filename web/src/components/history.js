@@ -5,7 +5,7 @@ import * as styles from "./history.module.css";
 const History = () => {
   return(
     <>
-        <h1>A Breif History</h1>
+        <h1 className={styles.history_title}>A Breif History</h1>
         <div className={styles.history_container}>
             <div className={styles.history_card_grid1}>
                 <div className={styles.history_card_flex}>

@@ -11,6 +11,10 @@
     padding-bottom: 4em;
 }
 
+.history_title {
+    font-family: var(--font-family-highlight);
+}
+
 .history_card_grid1 {
     grid-column: col-start / span 3;
     grid-row: 3;
@@ -60,6 +64,7 @@
 
 .history_card_when {
     font-size: 22px;
+    font-weight: 700;
 }
 
 .history_card_flex {

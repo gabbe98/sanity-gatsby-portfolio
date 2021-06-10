@@ -16,6 +16,8 @@ export const query = graphql`
     about: sanitySiteSettings {
       author {
         name
+        mail
+        linkedin
         image {
           asset {
             gatsbyImageData(
@@ -74,7 +76,12 @@ const AboutPage = props => {
     <Layout>
       <SEO title="About" />
       <Container>
-        <Author imageSrc={imageSrc} imageAlt={data.about.author.image.alt} bio={data.about.author.bio} />
+        <Author imageSrc={imageSrc} 
+                imageAlt={data.about.author.image.alt} 
+                bio={data.about.author.bio} 
+                mail={data.about.author.mail} 
+                linkedin={data.about.author.linkedin} 
+        />
         <History />
         <VerticalBar />
       </Container>

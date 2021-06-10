@@ -30,6 +30,16 @@ export default {
       name: 'bio',
       title: 'Bio',
       type: 'bioPortableText'
+    },
+    {
+      name: 'mail',
+      type: 'string',
+      title: 'Email Adress'
+    },
+    {
+      name: 'linkedin',
+      type: 'string',
+      title: 'Linkedin URL'
     }
   ],
   preview: {

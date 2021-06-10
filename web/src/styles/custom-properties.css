@@ -1,16 +1,18 @@
 @font-face{
-    font-family: Biotif ;
-    src:  url(../components/fonts/Biotif-Regular.ttf) format('ttf');
+    font-family: "Biotif" ;
+    src:  url("../components/fonts/Biotif.woff2") format('woff2'),
+          url("../components/fonts/Biotif.woff") format('woff');
 }
 
-/* @font-face{
-    font-family: Bogart ;
-    src:  url(../components/fonts/Bogart-Regular.ttf), format('ttf'),
-} */
+@font-face{
+  font-family: "Bogart" ;
+  src:  url("../components/fonts/Bogart.woff2") format('woff2'),
+        url("../components/fonts/Bogart.woff") format('woff');
+}
 
 :root {
   --font-family-primary: 'Biotif', Helvetica Neue, Helvetica, Arial, sans-serif;
-  /* --font-family-highlight: 'Bogart', Helvetica Neue, Helvetica, Arial, sans-serif; */
+  --font-family-highlight: 'Bogart', Helvetica Neue, Helvetica, Arial, sans-serif;
 
   --color-black: #111111;
   --color-dark-gray: #191919;

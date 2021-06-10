@@ -14,6 +14,7 @@
 }
 
 .author_paragraph_strong {
+    font-family: var(--font-family-highlight);
     font-size: 2em;
     line-height: 40px;
     font-weight: 700;
@@ -23,7 +24,7 @@
     width: 50%;
     text-align: center;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1300px) {
         width: 100%;
     }
 }
@@ -31,7 +32,7 @@
 .text_container {
     width: 50%;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1300px) {
         width: 100%;
     }
 }
@@ -42,7 +43,27 @@
     align-items: center;
     padding-bottom: 4em;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1300px) {
         flex-direction: column;
+    }
+}
+
+.icon_container {
+    display: flex;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
+
+    @nest & a {
+        color: var(--color-white);
+    }
+
+    @nest & span {
+        vertical-align: middle;
+        display: inline-block;
+        padding: 1em 1em 1em 0;
+        text-decoration: underline;
+        font-weight: 600;
     }
 }

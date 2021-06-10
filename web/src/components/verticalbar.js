@@ -43,7 +43,7 @@ const options = {
 
 const VerticalBar = () => (
   <>
-    <h1>My skillset</h1>
+    <h1 className={styles.title}>My skillset</h1>
     <Bar className={styles.verticalbarchart} data={data} options={options} />
   </>
 );
