@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import Icon from "./icon";
 
@@ -24,16 +24,16 @@ const Author = (props) => {
                 })}
                 <div className={styles.icon_container}>
                     <a href={"mailto:" + props.mail}>
-                        <span>
+                        <span className={styles.icon_svg}>
                             <Icon symbol="mail" />
                         </span>
-                        <span>{props.mail}</span>
+                        <span className={styles.icon_text}>{props.mail}</span>
                     </a>
                     <a href={props.linkedin}>
-                        <span>
+                        <span className={styles.icon_svg}>
                             <Icon symbol="linkedin" />
                         </span>
-                        <span>{linkedinLink + "-dahlberg"}</span>
+                        <span className={styles.icon_text}>{linkedinLink + "-dahlberg"}</span>
                     </a>
                 </div>
             </div>

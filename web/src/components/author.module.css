@@ -3,10 +3,14 @@
 :root {}
 
 .author_img {
-    border-radius: 2em; 
+    border-radius: 20px; 
     width: 500px;
     max-width: 100%;
     height: auto;
+
+    @nest & img {
+        border-radius: 20px !important;
+    }
 }
 
 .author_paragraph {
@@ -42,6 +46,7 @@
     display: flex;
     align-items: center;
     padding-bottom: 4em;
+    border-radius: 20px;
 
     @media (max-width: 1300px) {
         flex-direction: column;
@@ -53,17 +58,31 @@
 
     @media (max-width: 800px) {
         flex-direction: column;
+
+        @nest & a:first-of-type {
+            padding-right: 0.5em;
+        }
     }
 
     @nest & a {
         color: var(--color-white);
+        padding: 1em 0;
     }
 
-    @nest & span {
-        vertical-align: middle;
-        display: inline-block;
-        padding: 1em 1em 1em 0;
-        text-decoration: underline;
-        font-weight: 600;
+    @nest & a:first-of-type {
+        padding-right: 2em;
     }
+}
+
+.icon_svg {
+    padding-right: 8px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.icon_text {
+    height: 24px;
+    display: inline-block;
+    text-decoration: underline;
+    font-weight: 600;
 }

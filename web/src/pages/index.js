@@ -11,6 +11,7 @@ import ProjectPreviewGrid from "../components/project-preview-grid";
 import SEO from "../components/seo";
 import Layout from "../containers/layout";
 import Hero from "../components/hero";
+import GabbeBot from "../components/gabbebot";
 
 export const query = graphql`
   query IndexPageQuery {
@@ -109,6 +110,7 @@ const IndexPage = props => {
             browseMoreHref="/projects/"
           />
         )}
+        <GabbeBot />
       </Container>
     </Layout>
   );

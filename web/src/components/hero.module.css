@@ -55,7 +55,7 @@
 
 .displaycontainer {
     width: 50%;
-    background: var(--color-dark-gray);
+    background: var(--color-gray);
     border-radius: 2em;
     display: flex;
     margin: auto;

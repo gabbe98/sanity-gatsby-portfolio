@@ -10,6 +10,7 @@
 
 .leadMediaThumb {
   background: #eee;
+  text-align: center;
 
   @nest & img {
     position: absolute;
