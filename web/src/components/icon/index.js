@@ -4,6 +4,7 @@ import DarkModeIcon from "./darkmode";
 import TranslateIcon from "./translate";
 import LinkedinIcon from "./linkedin";
 import ChatIcon from "./chat";
+import CloseChatIcon from "./closechat";
 import GithubIcon from "./github";
 import MailIcon from "./mail";
 
@@ -19,6 +20,8 @@ function Icon(props) {
       return <GithubIcon />;
     case "chat":
       return <ChatIcon />;
+    case "closechat":
+      return <CloseChatIcon />;
     case "linkedin":
       return <LinkedinIcon />;
     case "mail":

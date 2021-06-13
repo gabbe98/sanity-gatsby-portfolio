@@ -5,6 +5,7 @@ import { getImage } from "gatsby-plugin-image"
 import GraphQLErrorList from "../components/graphql-error-list";
 
 import Container from "../components/container";
+import GabbeBot from "../components/gabbebot";
 import VerticalBar from "../components/verticalbar";
 import History from "../components/history";
 import Author from "../components/author";
@@ -84,6 +85,7 @@ const AboutPage = props => {
         />
         <History />
         <VerticalBar />
+        <GabbeBot />
       </Container>
     </Layout>
   );

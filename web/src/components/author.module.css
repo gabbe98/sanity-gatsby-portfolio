@@ -1,3 +1,4 @@
+@import '../styles/custom-media.css';
 @import '../styles/custom-properties.css';
 
 :root {}
@@ -71,6 +72,10 @@
 
     @nest & a:first-of-type {
         padding-right: 2em;
+
+        @media(--media-max-small) { 
+            padding-right: 0;
+        }
     }
 }
 
