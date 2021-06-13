@@ -5,6 +5,7 @@
 
 .hero_title {
     font-family: var(--font-family-highlight);
+    font-display: swap;
     font-size: 64px;
     line-height: 70px;
     font-weight: normal;

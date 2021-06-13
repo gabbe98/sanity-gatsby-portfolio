@@ -2,7 +2,7 @@ import React from "react";
 import { StaticQuery, graphql, Link } from "gatsby"
 import { cn } from "../lib/helpers";
 
-import Icon from "./icon";
+//import Icon from "./icon";
 
 import * as styles from "./header.module.css";
 
@@ -43,14 +43,14 @@ const Header = () => {
                 }}
               />
             <li className={`${styles.navicon} ${styles.navicon_margin_left}`}>
-              <a>
+              {/* <a href="#">
                  <Icon symbol="translate" />
-              </a>
+              </a> */}
             </li>
             <li className={styles.navicon}>
-              <a>
+              {/* <a href="#">
                 <Icon symbol="darkmode" /> 
-              </a>
+              </a> */}
             </li>
           </ul>
         </nav>

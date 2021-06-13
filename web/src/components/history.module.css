@@ -13,6 +13,7 @@
 
 .history_title {
     font-family: var(--font-family-highlight);
+    font-display: swap;
 }
 
 .history_card_grid1 {
