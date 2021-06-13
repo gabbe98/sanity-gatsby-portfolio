@@ -33,6 +33,12 @@ const GabbeBot = () => {
             <ChatBot
                 steps={[
                 {
+                    id: "0",
+                    message: "Hello my name is Gabbe Bot! I'm the 24/7 version of Gabriel. 🤖",
+                    trigger: "1",
+                    hideInput: true
+                },
+                {
                     id: "1",
                     message: "What would you like to know?",
                     trigger: "2",
