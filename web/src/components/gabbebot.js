@@ -80,9 +80,15 @@ const GabbeBot = () => {
                     component: (
                         <a href="mailto:gabriel.dahlberg1998@gmail.com">Link to my gmail.</a>
                     ),
+                    trigger: "emailmessage",
+                    hideInput: true
+                },
+                    {
+                    id: 'emailmessage',
+                    message: 'And if the link doesnt work mail me at "gabriel.dahlberg1998@gmail.com"',
                     trigger: "7",
                     hideInput: true
-                    },
+                },
                 {
                     id: "7",
                     message: "Is there anything else you'd like to know?",
@@ -100,7 +106,13 @@ const GabbeBot = () => {
                 },
                 {
                     id: "9",
-                    message: "Yippie, great! The easiest way to reach me'd be via my Linkedin or Email. 😃",
+                    message: "Yippie, great! The easiest way to reach me would be via my Linkedin or Email. 👨‍💼",
+                    trigger: "hiremessage",
+                    hideInput: true
+                },
+                {
+                    id: "hiremessage",
+                    message: "You can find more info and links on the about page.",
                     trigger: "10",
                     hideInput: true
                 },
