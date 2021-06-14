@@ -15,6 +15,11 @@ export default {
       title: 'Title'
     },
     {
+      name: 'link_thumbnail',
+      title: 'Image',
+      type: 'figure'
+    },
+    {
       name: 'description',
       type: 'text',
       title: 'Description',

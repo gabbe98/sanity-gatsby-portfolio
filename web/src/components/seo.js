@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
 
-function SEO({ description, lang, meta, keywords, title }) {
+function SEO({ description, lang, meta, keywords, title, link_thumbnail }) {
   return (
     <StaticQuery
       query={detailsQuery}
@@ -11,6 +11,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         const metaDescription = description || (data.site && data.site.description) || "";
         const siteTitle = (data.site && data.site.title) || "";
         const siteAuthor = (data.site && data.site.author && data.site.author.name) || "";
+        const siteImage = data.site.link_thumbnail.asset.url;
         return (
           <Helmet
             htmlAttributes={{ lang }}
@@ -30,12 +31,16 @@ function SEO({ description, lang, meta, keywords, title }) {
                 content: metaDescription
               },
               {
-                property: "theme-color",
-                content: "#111111"
-              },
-              {
                 property: "og:type",
                 content: "website"
+              },
+              {
+                property: "og:image",
+                content: siteImage
+              },
+              {
+                name: "theme-color",
+                content: "#111111"
               },
               {
                 name: "twitter:card",
@@ -90,6 +95,11 @@ const detailsQuery = graphql`
   query DefaultSEOQuery {
     site: sanitySiteSettings(_id: { eq: "siteSettings" }) {
       title
+      link_thumbnail {
+        asset {
+          url
+        }
+      }
       description
       keywords
       author {
