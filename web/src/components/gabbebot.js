@@ -3,12 +3,13 @@ import { ThemeProvider } from "styled-components";
 import ChatBot from "react-simple-chatbot";
 
 const config ={
+    floating: true,
+    opened: false,
     headerTitle: "Gabbe Bot",
     hideUserAvatar: true,
     inputStyle: {
         display: "none"
     },
-    floating: true,
     customStyle: {
         background: "#222222",
         color: "#fff",
@@ -75,17 +76,9 @@ const GabbeBot = () => {
                     ],
                     hideInput: true
                 },
-                {
-                    id: '6',
-                    component: (
-                        <a href="mailto:gabriel.dahlberg1998@gmail.com">Link to my gmail.</a>
-                    ),
-                    trigger: "emailmessage",
-                    hideInput: true
-                },
                     {
-                    id: 'emailmessage',
-                    message: 'And if the link doesnt work mail me at "gabriel.dahlberg1998@gmail.com"',
+                    id: '6',
+                    message: 'My mail is "gabriel.dahlberg1998@gmail.com"',
                     trigger: "7",
                     hideInput: true
                 },
@@ -133,7 +126,7 @@ const GabbeBot = () => {
                 },
                 {
                     id: "12",
-                    message: "Hard question but probably have to say League of Legends. 😃",
+                    message: "Hard question but probably have to say League of Legends or Rainbow six siege. 😃",
                     trigger: "13",
                     hideInput: true
                 },

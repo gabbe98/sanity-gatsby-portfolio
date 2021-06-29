@@ -21,7 +21,7 @@ function RoleList({ items, title }) {
                       .height(100)
                       .fit("crop")
                       .url()}
-                    alt=""
+                    alt="Contributor profileicon."
                   />
                 )}
               </div>
